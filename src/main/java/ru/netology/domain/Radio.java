@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Data
 
 public class Radio {
-    private int id;
     private int minRadioStation = 0;
     private int maxRadioStation = 20;
     private int currentRadioStation;

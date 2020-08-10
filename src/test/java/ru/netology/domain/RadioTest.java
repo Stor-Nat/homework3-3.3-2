@@ -50,7 +50,6 @@ class RadioTest {
 
     @Test
     public void shouldSoundPlus() {
-        radio.setMaxSound(10);
         radio.setCurrentSound(5);
         radio.soundPlus();
         assertEquals(6, radio.getCurrentSound());
@@ -58,10 +57,9 @@ class RadioTest {
 
     @Test
     public void shouldNotSoundPlus() {
-        radio.setMaxSound(10);
-        radio.setCurrentSound(10);
+        radio.setCurrentSound(100);
         radio.soundPlus();
-        assertEquals(10, radio.getCurrentSound());
+        assertEquals(100, radio.getCurrentSound());
     }
 
     @Test
