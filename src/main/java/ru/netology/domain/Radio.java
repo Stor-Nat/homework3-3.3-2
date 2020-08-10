@@ -1,12 +1,15 @@
 package ru.netology.domain;
 
 public class Radio {
+    private int id;
+    private int minRadioStation = 0;
+    private int maxRadioStation = 20;
     private int currentRadioStation;
-    private int minRadioStation;
-    private int maxRadioStation;
-    private int currentSound;
-    private int minSound;
-    private int maxSound;
+
+    private int minSound = 0;
+    private int maxSound = 100;
+    private int currentSound = (minSound + maxSound) / 2;
+
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
